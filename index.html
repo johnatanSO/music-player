@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="player">
+        <div class="cover">
+            <img src="./eminem-img.jpg" alt="play" class="src">
+        </div>
+        <div class="info">
+            <div class="title">Stay</div>
+            <div class="singer">Trending music 2021</div>
+        </div>
+        <div class="volume-box">
+            <span class="volume-down">
+                <i class="fas fa-minus"></i>
+            </span>
+            <input type="range" class="volume-range" step="1" min="0" max="100" oninput="music.volume = this.value/100">
+            <span class="volume-up">
+                <i class="fas fa-plus"></i>
+            </span>
+        </div>
+        <div class="btn-box">
+            <i class=" repeat fas fa-redo-alt" onclick="handleRepeat()"></i>
+
+            <i class="favorite fas fa-heart" onclick="handleFavorite()"></i>
+
+            <i class="volume fas fa-volume-up" onclick="handleVolume()"></i>
+
+        </div>
+        <div class="music-box">
+            <input type="range" step="1" class="seekbar" value="0" min="0" max="100" oninput="handleSeekBar()">
+
+            <audio class="music-element">
+                <source src="./song.mp3" type="audio/mp3">
+            </audio> 
+            <span class="current-time">0:0</span>
+            <span class="duration">0:0</span>
+            <span class="play" onclick="handlePlay()">
+                <i class="fas fa-play"></i>        
+            </span>
+        </div>  
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
