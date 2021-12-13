@@ -94,3 +94,29 @@ function handleForward(){
 function handleBackward(){
     music.currentTime -= 10
 }
+
+function darkTheme(){
+    let player = document.querySelector(".player")
+    let volume = document.querySelector(".volume")
+    let volumeDown = document.querySelector(".volume-down")
+    let volumeUP = document.querySelector(".volume-up")
+    let favorite = document.querySelector(".favorite")
+    let repeat = document.querySelector(".repeat")
+    let backward = document.querySelector(".fa-backward")
+    let forward = document.querySelector(".fa-forward")
+    let play = document.querySelector(".fa-play")
+    let title = document.querySelector('.title')
+    let singer = document.querySelector('.singer')
+
+    player.classList.toggle('playerDARKMODE')
+    volume.classList.toggle('volumeDARKMODE')
+    volumeDown.classList.toggle('volume-downDARKMODE')
+    volumeUP.classList.toggle('volume-upDARKMODE')
+    favorite.classList.toggle('favoriteDARKMODE')
+    repeat.classList.toggle('repeatDARKMODE')
+    backward.classList.toggle('backwardDARKMODE')
+    forward.classList.toggle('forwardDARKMODE')
+    play.classList.toggle('playDARKMODE')
+    title.classList.toggle('titleDARKMODE')
+    singer.classList.toggle('singerDARKMODE')
+}

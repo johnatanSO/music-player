@@ -248,3 +248,54 @@ body {
     font-size:32px;
     transform: translate(-50%, -50%)
 }
+
+
+/* DARK MODE */
+ .playerDARKMODE{
+    background-color: #16161A;
+}
+.player .volume-box .volume-upDARKMODE{
+    color: white
+}
+.player .volume-box .volume-downDARKMODE{
+    color: white
+}
+.player .btn-box .volumeDARKMODE{
+    color: white
+}
+.player .btn-box .favoriteDARKMODE{
+    color: white
+}
+.player .btn-box .repeatDARKMODE{
+    color: white
+}
+.player .music-box .backwardDARKMODE{
+    color: white
+}
+.player .music-box .forwardDARKMODE{
+    color:white
+}
+.player .music-box .play .playDARKMODE{
+    color: white
+}
+.player .music-box .pause .pauseDARKMODE{
+    color: white
+}
+
+.player .info .titleDARKMODE{
+    font-size:20px;
+    font-weight: 700;
+    color: rgb(210, 210, 210);
+    margin: bottom 2px;
+}
+.player .info .singerDARKMODE{
+    font-size: 12px;
+    color: #b4b4b5;
+}
+/*
+.player .playDARKMODE{
+    color: white
+}
+.player .music-box .forwardDARKMODE{
+    color: white
+} */
