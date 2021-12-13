@@ -7,7 +7,7 @@ body {
     background-color:#f5e8e5;
     background-image: linear-gradient(45deg, #ff9b9c 0%, 100%);
     position: relative;
-    font-family: roboto,sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 *::selection{
@@ -23,7 +23,7 @@ body {
     height: 530px;
     border-radius: 15px;
     background-color: #fff6e7;
-    box-shadow: 0 15px 20px 0 #c58371;
+    box-shadow: 0 15px 20px 0 #696098;
 }
 .player input[type=range]{
     -webkit-appearance: none !important;
@@ -49,21 +49,21 @@ body {
 }
 .player input[type=range]::-webkit-slider-thumb{
     -webkit-appearance: none !important;
-    background: #ff3677;
+    background: #5836ff;
     height:10px;
     width: 10px;
     border-radius:100%;
-    box-shadow: -100vw 0 0 100vw #f7d9b9;
+    box-shadow: -100vw 0 0 100vw #bfbad2;
 }
 .player input[type=range]::-moz-range-thumb {
-    background: #ff3677;
+    background: #5836ff;
     height: 8px;
     width: 8px;
     border-radius: 100%;
  }
 .player input[type=range]::-ms-thumb {
     -webkit-appearance: none !important;
-    background: #ff3677;
+    background: #5836ff;
     height: 8px;
     width: 8px;
     border-radius: 100%;
@@ -116,7 +116,7 @@ body {
     transition: 0.1s;
 }
 .player .btn-box i.active{
-    color: #ff3677;
+    color: #5836ff;
 }
 .player .volume-box{
     display:none;
@@ -125,49 +125,59 @@ body {
     top: 295px;
     transform:translateX(-50%);
     z-index: 1;
-    padding: 0 20px
+    padding: 0 20px;
+    
 }
 .player .volume-box .volume-down{
     position: absolute;
     left: -15px;
     top: 50%;
-    transform:translateY(-50%);
+    transform:translateY(-75%);
     cursor:pointer;
     color: #72646f;
+    
 }
 .player .volume-box .volume-up{
     position: absolute;
     left: 190px;
     top: 50%;
-    transform:translateY(-50%);
+    transform:translateY(-75%);
     cursor:pointer;
     color: #72646f;
+    
 }
 .player .volume-box .volume-up::selection{
     background-color:unset;
+    
 }
 .player .volume-box input[type=range]{
-    height: 5px;
+    height: 8px;
     width: 150px;
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 0;  
+}
+.player .volume-box input[type=range]::-webkit-slider-thumb{
+    height:8px;
+    width: 10px;
+    border-radius: 3px;
 }
 .player .volume-box.active{
-    display:block;
+    display:block; 
 }
 .player .music-box{
     position: absolute;
     left: 50%;
     top: 385px;
-    transform: translateX(-50%);
+    transform: translateX(-50%);    
 }
 .player .music-box input[type=range]{
-    height:5px;
+    height:8px;
     width: 230px;
     margin: 0 0 10px 0;
 }
 .player .music-box input[type=range]::-webkit-slider-thumb{
-    height:5px;
-    width: 7px;
+    height:8px;
+    width: 10px;
+    border-radius: 3px;
 }
 .player .music-box .current-time{
     position: absolute;
@@ -175,7 +185,7 @@ body {
     top: 50%;
     transform:translateY(-50%);
     font-size: 12px;
-    color: #72646f;
+    color: #72646f;    
 }
 .player .music-box .duration{
     position: absolute;
@@ -185,16 +195,42 @@ body {
     font-size:12px;
     color: #72646f;
 }
+.player .music-box .backward{
+    position: absolute;
+    left: 5%;
+    top:27px;
+    color: #72646f;
+    width: 100px;
+    font-size: 2rem;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.player .music-box .forward{
+    position: absolute;
+    right: -15%;
+    top:27px;
+    color: #72646f;
+    width: 100px;
+    font-size: 2rem;
+    height: 50px;
+    cursor: pointer;
+}
+.player .music-box .backward:active{
+    color: #5836ff;
+}
+.player .music-box .forward:active{
+    color: #5836ff;
+}
 .player .music-box .play,
 .player .music-box .pause {
     position: absolute;
     left: 50%;
-    top:55px;
+    top:45px;
     transform: translateX(-50%);
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background-color: #fff6e7;
     cursor: pointer;
     transition: all 0.4s;
 }
@@ -205,7 +241,8 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform:translate(-48%, -50%)
+    transform:translate(-48%, -50%);
+    
 }
 .player .music-box .pause i{
     font-size:32px;

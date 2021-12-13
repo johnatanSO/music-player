@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
 
     <div class="player">
         <div class="cover">
-            <img src="./eminem-img.jpg" alt="play" class="src">
+            <img src="./assets/eminem-img.jpg" alt="play" class="src">
         </div>
         <div class="info">
-            <div class="title">Stay</div>
-            <div class="singer">Trending music 2021</div>
+            <div class="title">Rap God</div>
+            <div class="singer">Eminem</div>
         </div>
         <div class="volume-box">
             <span class="volume-down">
@@ -39,17 +42,21 @@
             <input type="range" step="1" class="seekbar" value="0" min="0" max="100" oninput="handleSeekBar()">
 
             <audio class="music-element">
-                <source src="./song.mp3" type="audio/mp3">
+                <source src="./assets/song.mp3" type="audio/mp3">
             </audio> 
-            <span class="current-time">0:0</span>
-            <span class="duration">0:0</span>
+            <span class="current-time">00:00</span>
+            <span class="duration">00:00</span>
+            <span class="backward" onclick="handleBackward()">
+                <i class="fas fa-backward backward"></i>
+            </span>
             <span class="play" onclick="handlePlay()">
-                <i class="fas fa-play"></i>        
+                <i class="fas fa-play"></i>   
+            </span>
+            <span class="forward" onclick="handleForward()">
+                <i class="fas fa-forward forward"></i> 
             </span>
         </div>  
     </div>
-
-
     <script src="script.js"></script>
 </body>
 </html>

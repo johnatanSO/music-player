@@ -82,3 +82,15 @@ function handleVolumeUp() {
     volumeRange.value = Number(volumeRange.value) + 10
     music.volume = volumeRange.value / 100
 }
+
+//increment/decrement
+function handleForward(){
+    if(music.currentTime == music.duration){
+        music.currentTime = 0
+    }else{
+        music.currentTime += 10
+    }
+}
+function handleBackward(){
+    music.currentTime -= 10
+}
