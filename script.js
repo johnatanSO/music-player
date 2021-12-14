@@ -119,4 +119,6 @@ function darkTheme(){
     play.classList.toggle('playDARKMODE')
     title.classList.toggle('titleDARKMODE')
     singer.classList.toggle('singerDARKMODE')
+    currentTime.classList.toggle('current-timeDARKMODE')
+    duration.classList.toggle('durationDARKMODE')
 }

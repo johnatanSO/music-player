@@ -292,10 +292,20 @@ body {
     font-size: 12px;
     color: #b4b4b5;
 }
-/*
-.player .playDARKMODE{
-    color: white
+.player .music-box .current-timeDARKMODE{
+    color: rgb(193, 193, 193);
 }
-.player .music-box .forwardDARKMODE{
-    color: white
-} */
+.player .music-box .durationDARKMODE{
+    color: rgb(193,193,193);
+}
+
+.darkTheme{
+    padding: 1rem;
+    color: white;
+    background-color: #16161A;
+    border-radius: 0.4rem;
+    border: 1px solid #5836ff;;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 #696098;
+    margin: 0.2rem;
+}
