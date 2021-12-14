@@ -24,6 +24,7 @@ body {
     border-radius: 15px;
     background-color: #fff6e7;
     box-shadow: 0 15px 20px 0 #696098;
+    transition: background-color 0.3s;
 }
 .player input[type=range]{
     -webkit-appearance: none !important;
@@ -301,11 +302,20 @@ body {
 
 .darkTheme{
     padding: 1rem;
-    color: white;
-    background-color: #16161A;
+    color: #5836ff;
+    font-weight: 700 ;
+    background-color: white;
     border-radius: 0.4rem;
-    border: 1px solid #5836ff;;
+    border: 2px solid #5836ff;;
     cursor: pointer;
     box-shadow: 0 2px 5px 0 #696098;
     margin: 0.2rem;
+}
+.darkTheme{
+    transition: background-color 0.3s;
+}
+.buttonDARK{
+    color: #c0b6f9;
+    background-color:#16161A;
+    border: 2px solid #2b0dc1;
 }

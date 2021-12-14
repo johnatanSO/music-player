@@ -107,6 +107,7 @@ function darkTheme(){
     let play = document.querySelector(".fa-play")
     let title = document.querySelector('.title')
     let singer = document.querySelector('.singer')
+    let buttonTheme = document.querySelector('.darkTheme')
 
     player.classList.toggle('playerDARKMODE')
     volume.classList.toggle('volumeDARKMODE')
@@ -121,4 +122,5 @@ function darkTheme(){
     singer.classList.toggle('singerDARKMODE')
     currentTime.classList.toggle('current-timeDARKMODE')
     duration.classList.toggle('durationDARKMODE')
+    buttonTheme.classList.toggle('buttonDARK')
 }
