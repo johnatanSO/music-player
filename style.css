@@ -245,6 +245,7 @@ body {
     transform:translate(-48%, -50%);
     
 }
+
 .player .music-box .pause i{
     font-size:32px;
     transform: translate(-50%, -50%)
@@ -255,30 +256,39 @@ body {
  .playerDARKMODE{
     background-color: #16161A;
 }
+
 .player .volume-box .volume-upDARKMODE{
     color: white
 }
+
 .player .volume-box .volume-downDARKMODE{
     color: white
 }
+
 .player .btn-box .volumeDARKMODE{
     color: white
 }
+
 .player .btn-box .favoriteDARKMODE{
     color: white
 }
+
 .player .btn-box .repeatDARKMODE{
     color: white
 }
+
 .player .music-box .backwardDARKMODE{
     color: white
 }
+
 .player .music-box .forwardDARKMODE{
     color:white
 }
+
 .player .music-box .play .playDARKMODE{
     color: white
 }
+
 .player .music-box .pause .pauseDARKMODE{
     color: white
 }
@@ -289,13 +299,16 @@ body {
     color: rgb(210, 210, 210);
     margin: bottom 2px;
 }
+
 .player .info .singerDARKMODE{
     font-size: 12px;
     color: #b4b4b5;
 }
+
 .player .music-box .current-timeDARKMODE{
     color: rgb(193, 193, 193);
 }
+
 .player .music-box .durationDARKMODE{
     color: rgb(193,193,193);
 }
@@ -311,9 +324,11 @@ body {
     box-shadow: 0 2px 5px 0 #696098;
     margin: 0.2rem;
 }
+
 .darkTheme{
     transition: background-color 0.3s;
 }
+
 .buttonDARK{
     color: #c0b6f9;
     background-color:#16161A;
