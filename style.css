@@ -136,8 +136,13 @@ body {
     transform:translateY(-75%);
     cursor:pointer;
     color: #72646f;
-    
+    transition: color 0.05s;
 }
+
+.player .volume-box .volume-down:active{
+    color: #5836ff
+}
+
 .player .volume-box .volume-up{
     position: absolute;
     left: 190px;
@@ -145,8 +150,13 @@ body {
     transform:translateY(-75%);
     cursor:pointer;
     color: #72646f;
-    
+    transition: color 0.05s;
 }
+
+.player .volume-box .volume-up:active{
+    color: #5836ff
+}
+
 .player .volume-box .volume-up::selection{
     background-color:unset;
     
@@ -285,11 +295,7 @@ body {
     color:white
 }
 
-.player .music-box .play .playDARKMODE{
-    color: white
-}
-
-.player .music-box .pause .pauseDARKMODE{
+.player .music-box .playBtn .playBtnDARKMODE{
     color: white
 }
 
@@ -315,11 +321,11 @@ body {
 
 .darkTheme{
     padding: 1rem;
-    color: #5836ff;
+    color: #c0b6f9;
     font-weight: 700 ;
-    background-color: white;
+    background-color: #16161A;
     border-radius: 0.4rem;
-    border: 2px solid #5836ff;;
+    border: 2px solid #2b0dc1;
     cursor: pointer;
     box-shadow: 0 2px 5px 0 #696098;
     margin: 0.2rem;
@@ -330,7 +336,7 @@ body {
 }
 
 .buttonDARK{
-    color: #c0b6f9;
-    background-color:#16161A;
-    border: 2px solid #2b0dc1;
+    color: #5836ff;
+    background-color:white;
+    border: 2px solid #5836ff;
 }

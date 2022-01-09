@@ -4,20 +4,30 @@ let playBtn = document.querySelector(".play")
 let seekbar = document.querySelector(".seekbar")
 let currentTime = document.querySelector(".current-time")
 let duration = document.querySelector(".duration")
+let dark = ''
 
 function handlePlay(){
     if (music.paused){
         music.play()
-        playBtn.className = 'pause'
-        playBtn.innerHTML = '<i class="fas fa-pause"></i>'
+        playBtn.className = 'pause playBtn'
+        if(dark==false){
+            playBtn.innerHTML = '<i class="fas fa-pause"></i>'
+        }else if(dark==true){
+            playBtn.innerHTML = '<i class="fas fa-pause playBtnDARKMODE"></i>'
+        }
+        
     }else{
         music.pause()
-        playBtn.className = 'play'
-        playBtn.innerHTML = '<i class="fas fa-play"></i>'
+        playBtn.className = 'play playBtn'
+        if(dark==false){
+            playBtn.innerHTML = '<i class="fas fa-play"></i>'
+        }else if(dark==true){
+            playBtn.innerHTML = '<i class="fas fa-play playBtnDARKMODE"></i>'
+        }
     }
     music.addEventListener('ended', function(){
-        playBtn.className = 'play'
-        playBtn.innerHTML = '<i class="fas fa-play"></i>s'
+        playBtn.className = 'play playBtn'
+        playBtn.innerHTML = '<i class="fas fa-play"></i>'
         music.currentTime = 0
     })
 }
@@ -96,6 +106,12 @@ function handleBackward(){
 }
 
 function darkTheme(){
+    if(dark == false){
+        dark=true
+    }else{
+        dark=false
+    }
+
     let player = document.querySelector(".player")
     let volume = document.querySelector(".volume")
     let volumeDown = document.querySelector(".volume-down")
@@ -104,7 +120,7 @@ function darkTheme(){
     let repeat = document.querySelector(".repeat")
     let backward = document.querySelector(".fa-backward")
     let forward = document.querySelector(".fa-forward")
-    let play = document.querySelector(".fa-play")
+    let playBtn = document.querySelector(".playBtn")
     let title = document.querySelector('.title')
     let singer = document.querySelector('.singer')
     let buttonTheme = document.querySelector('.darkTheme')
@@ -117,10 +133,10 @@ function darkTheme(){
     repeat.classList.toggle('repeatDARKMODE')
     backward.classList.toggle('backwardDARKMODE')
     forward.classList.toggle('forwardDARKMODE')
-    play.classList.toggle('playDARKMODE')
     title.classList.toggle('titleDARKMODE')
     singer.classList.toggle('singerDARKMODE')
     currentTime.classList.toggle('current-timeDARKMODE')
     duration.classList.toggle('durationDARKMODE')
     buttonTheme.classList.toggle('buttonDARK')
+    playBtn.children[0].classList.toggle('playBtnDARKMODE')    
 }

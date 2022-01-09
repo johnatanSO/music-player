@@ -17,17 +17,17 @@
 
     <div class="player">
         <div class="cover">
-            <img src="./assets/eminem-img.jpg" alt="play" class="src">
+            <img src="./assets/50cent.jpg" alt="play" class="src">
         </div>
         <div class="info">
-            <div class="title">Rap God</div>
-            <div class="singer">Eminem</div>
+            <div class="title">In Da Club</div>
+            <div class="singer">50 Cent</div>
         </div>
         <div class="volume-box">
             <span class="volume-down">
                 <i class="fas fa-minus"></i>
             </span>
-            <input type="range" class="volume-range" step="1" min="0" max="100" oninput="music.volume = this.value/100">
+            <input type="range" class="volume-range" value="100" step="1" min="0" max="100" oninput="music.volume = this.value/100">
             <span class="volume-up">
                 <i class="fas fa-plus"></i>
             </span>
@@ -51,7 +51,7 @@
             <span class="backward" onclick="handleBackward()">
                 <i class="fas fa-backward backward"></i>
             </span>
-            <span class="play" onclick="handlePlay()">
+            <span class="play playBtn" onclick="handlePlay()">
                 <i class="fas fa-play"></i>   
             </span>
             <span class="forward" onclick="handleForward()">
